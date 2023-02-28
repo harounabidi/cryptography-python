@@ -5,9 +5,9 @@ def decrypt(text, c) :
 	for i in range(len(text)) :
 
 		if text[i] == " " :
-			crypted += " "
+			decrypted += " "
 		else :
-			crypted += chr((ord(text[i]) - ord(c)) % 26 + 97)
+			decrypted += chr((ord(text[i]) - ord(c)) % 26 + 97)
 
 	return decrypted
 

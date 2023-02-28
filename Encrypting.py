@@ -5,9 +5,9 @@ def encrypt(text, c) :
 	for i in range(len(text)) :
 
 		if text[i] == " " :
-			crypted += " "
+			encrypted += " "
 		else :
-			crypted += chr((ord(text[i]) + ord(c) - 194)%26 + 97)
+			encrypted += chr((ord(text[i]) + ord(c) - 194)%26 + 97)
 
 	return encrypted
 
