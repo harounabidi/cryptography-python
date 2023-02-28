@@ -1,6 +1,6 @@
 def decrypt(text, c) :
 
-	crypted = ""
+	decrypted = ""
 
 	for i in range(len(text)) :
 
@@ -9,7 +9,7 @@ def decrypt(text, c) :
 		else :
 			crypted += chr((ord(text[i]) - ord(c)) % 26 + 97)
 
-	return crypted
+	return decrypted
 
 text = input("Enter a text to decrypt: ")
 c = input("Decryption key: ")

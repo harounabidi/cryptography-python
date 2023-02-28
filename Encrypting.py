@@ -1,6 +1,6 @@
 def encrypt(text, c) :
 
-	crypted = ""
+	encrypted = ""
 
 	for i in range(len(text)) :
 
@@ -9,7 +9,7 @@ def encrypt(text, c) :
 		else :
 			crypted += chr((ord(text[i]) + ord(c) - 194)%26 + 97)
 
-	return crypted
+	return encrypted
 
 text = input("Enter a text to encrypt: ")
 c = input("Encryption key: ")
