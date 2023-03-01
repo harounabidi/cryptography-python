@@ -1,4 +1,4 @@
-def decrypt(text, c) :
+def caesar_decrypt(text, c) :
 
 	decrypted = ""
 
@@ -15,5 +15,5 @@ text = input("Enter a text to decrypt: ")
 c = input("Decryption key: ")
 
 print("\n-------------------------")
-print("Plaintext: " + decrypt(text, c))
+print("Plaintext: " + caesar_decrypt(text, c))
 print("-------------------------")

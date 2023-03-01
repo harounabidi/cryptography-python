@@ -1,4 +1,4 @@
-def encrypt(text, c) :
+def caesar_encrypt(text, c) :
 
 	encrypted = ""
 
@@ -15,5 +15,5 @@ text = input("Enter a text to encrypt: ")
 c = input("Encryption key: ")
 
 print("\n-------------------------")
-print("Ciphertext: " + encrypt(text, c))
+print("Ciphertext: " + caesar_encrypt(text, c))
 print("-------------------------")
