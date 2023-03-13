@@ -1,19 +1,22 @@
-def encrypt(text, c) :
+def caesar_encrypt(text, key) :
 
 	encrypted = ""
-
+	
 	for i in range(len(text)) :
+		
+		text_p = ord(text[i]) - 97
+		key_p = ord(key) - 97
 
 		if text[i] == " " :
 			encrypted += " "
 		else :
-			encrypted += chr((ord(text[i]) + ord(c) - 194) % 26 + 97)
+			encrypted += chr((text_p + key_p) % 26 + 97)
 
 	return encrypted
 
 text = input("Enter a text to encrypt: ")
-c = input("Encryption key: ")
+key = input("Encryption key: ")
 
 print("\n-------------------------")
-print("Ciphertext: " + encrypt(text, c))
+print("Ciphertext: " + caesar_encrypt(text, key))
 print("-------------------------")
